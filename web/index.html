@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ClicX — tu teléfono es el mouse</title>
+    <meta
+      name="description"
+      content="Usá tu teléfono como trackpad de laptop, teclado y centro de control. Misma red, sin cuenta ni nube."
+    />
+    <meta name="theme-color" content="#f5f8f3" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="wordmark" href="#top" aria-label="ClicX inicio">
+          <img src="./favicon.svg" alt="" width="22" height="22" />
+          ClicX
+        </a>
+        <nav class="nav-links" id="primary-nav" aria-label="Principal">
+          <a href="#features">Funciones</a>
+          <a href="#pasos">Cómo</a>
+          <a href="#gestos">Gestos</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="nav-cta" href="#bajar">Bajar</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-stage" aria-hidden="true">
+          <canvas class="dot-field" id="dot-field"></canvas>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">ClicX · tu PC, en el teléfono</p>
+          <h1 id="hero-title">Tu teléfono.<br /><em>El mouse.</em></h1>
+          <p class="hero-sub">
+            Trackpad de laptop, teclado y centro de control. En la misma red.
+            Sin cuenta ni nube.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="btn btn-primary"
+              href="https://github.com/santyAlv/clicx-touchpad/releases"
+            >
+              Host Windows
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/santyAlv/clicx-touchpad/releases"
+            >
+              App Android
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+          <p class="hero-meta">Windows · Android · 37 MB y 80 MB · Wi‑Fi, USB o Bluetooth</p>
+        </div>
+
+        <div class="hero-phone" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="phone-status">
+                <span>ClicX</span>
+                <span class="phone-wifi">Wi‑Fi</span>
+              </div>
+              <div class="phone-pad">
+                <canvas id="pad-field"></canvas>
+              </div>
+              <div class="phone-dock">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Qué hace ClicX">
+        <div class="ticker-track">
+          <span>Trackpad</span>
+          <span>Click</span>
+          <span>Scroll</span>
+          <span>Zoom</span>
+          <span>Teclado</span>
+          <span>Deck</span>
+          <span>Volumen</span>
+          <span>Ventanas</span>
+          <span>Portapapeles</span>
+          <span>Archivos</span>
+          <span>QR</span>
+          <span>USB</span>
+          <span>Bluetooth</span>
+          <span>Uso de IA</span>
+          <span>Sin nube</span>
+          <span>Trackpad</span>
+          <span>Click</span>
+          <span>Scroll</span>
+          <span>Zoom</span>
+          <span>Teclado</span>
+          <span>Deck</span>
+          <span>Volumen</span>
+          <span>Ventanas</span>
+          <span>Portapapeles</span>
+          <span>Archivos</span>
+          <span>QR</span>
+          <span>USB</span>
+          <span>Bluetooth</span>
+          <span>Uso de IA</span>
+          <span>Sin nube</span>
+        </div>
+      </section>
+
+      <section class="features" id="features" aria-labelledby="features-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="kicker">01 / qué hay en clicx</p>
+            <h2 id="features-title">El centro de control<br /><em>en el bolsillo.</em></h2>
+          </div>
+          <div class="features-grid">
+            <article class="feature-card">
+              <p class="feature-index">01</p>
+              <h3>El trackpad que ya tenés.</h3>
+              <p>
+                Arrastrá, tocá, scrolleá y hacé zoom como en una laptop. Al lado,
+                un Deck de botones: páginas que agregás y sacás, con apps,
+                atajos y volumen.
+              </p>
+            </article>
+            <article class="feature-card feature-card--dark">
+              <p class="feature-index">02</p>
+              <h3>Sin cuenta. Sin nube.</h3>
+              <p>
+                El host en Windows y la app se hablan en tu red. Wi‑Fi, QR, USB
+                o Bluetooth. Nada sale de casa.
+              </p>
+            </article>
+            <article class="feature-card feature-card--wide">
+              <div>
+                <p class="feature-index">03</p>
+                <h3>Del QR al primer toque.</h3>
+                <p>
+                  Arrancá el host, abrí la app, escaneá el código. En un minuto
+                  el teléfono mueve el cursor.
+                </p>
+              </div>
+              <div class="feature-points" aria-label="Formas de conectar">
+                <span>Wi‑Fi</span>
+                <span>QR</span>
+                <span>USB</span>
+                <span>Bluetooth</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps" id="pasos" aria-labelledby="steps-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="kicker">02 / tres pasos</p>
+            <h2 id="steps-title">Instalá las dos partes.<br /><em>Después, un QR.</em></h2>
+          </div>
+          <ol class="step-list">
+            <li>
+              <span class="step-num">1</span>
+              <h3>Host en la PC</h3>
+              <p>Python o el .exe en Windows. Te muestra IP, puerto y QR.</p>
+            </li>
+            <li>
+              <span class="step-num">2</span>
+              <h3>App en el teléfono</h3>
+              <p>Expo Go o el APK. Misma red, o cable USB con depuración.</p>
+            </li>
+            <li>
+              <span class="step-num">3</span>
+              <h3>Escaneá y listo</h3>
+              <p>El QR del host abre el trackpad. El centro de control está en ⌂.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="center" id="gestos" aria-labelledby="center-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="kicker">03 / más que un mouse</p>
+            <h2 id="center-title">Gestos de laptop,<br /><em>y un panel entero.</em></h2>
+          </div>
+          <div class="center-layout">
+            <ul class="gesture-list">
+              <li><strong>1 dedo</strong> mueve el cursor</li>
+              <li><strong>Tap</strong> click izquierdo</li>
+              <li><strong>2 dedos</strong> click derecho / scroll</li>
+              <li><strong>Pellizco</strong> zoom</li>
+              <li><strong>Mantener</strong> arrastra</li>
+              <li><strong>3 dedos</strong> escritorios y Alt+Tab</li>
+            </ul>
+            <div class="tile-grid">
+              <article class="tile"><span>Trackpad</span> Panel, gestos y Deck</article>
+              <article class="tile"><span>Estado</span> CPU, RAM, disco, batería</article>
+              <article class="tile"><span>Acciones</span> Bloqueo, apagado, capturas</article>
+              <article class="tile"><span>Multimedia</span> Reproducción y volumen</article>
+              <article class="tile"><span>Teclado</span> F1–F12, atajos, escritura</article>
+              <article class="tile"><span>Volumen por app</span> Ajuste por aplicación</article>
+              <article class="tile"><span>Ventanas</span> Foco, minimizar, cerrar</article>
+              <article class="tile"><span>Portapapeles</span> Copiar entre PC y teléfono</article>
+              <article class="tile"><span>Archivos</span> Enviar y recibir en local</article>
+              <article class="tile"><span>Uso de IA</span> Claude y Codex: semana y 5 h</article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="download" id="bajar" aria-labelledby="download-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="kicker">04 / bajá las dos</p>
+            <h2 id="download-title">Hace falta el host<br /><em>y la app.</em></h2>
+            <p class="section-copy">
+              El host vive en la PC. La app, en el teléfono. Bajá los dos
+              desde acá e instalalos.
+            </p>
+          </div>
+          <div class="download-grid">
+            <article class="download-card">
+              <p class="download-step">Paso 1</p>
+              <h3>Host para Windows</h3>
+              <p>
+                <code>clicx-host.exe</code> · 37 MB · host 0.8.0. Abrilo en la
+                PC. Si Windows avisa, elegí Ejecutar de todos modos.
+              </p>
+              <a
+                class="btn btn-primary"
+                href="https://github.com/santyAlv/clicx-touchpad/releases"
+                >Descargar host</a
+              >
+            </article>
+            <article class="download-card">
+              <p class="download-step">Paso 2</p>
+              <h3>App en el teléfono</h3>
+              <p>
+                <code>ClicX.apk</code> · 80 MB · app 0.1.0. En Android hay que
+                permitir instalar desde el navegador.
+              </p>
+              <a
+                class="btn btn-dark"
+                href="https://github.com/santyAlv/clicx-touchpad/releases"
+                >Descargar APK</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+        <div class="section-shell faq-shell">
+          <div class="faq-heading">
+            <p class="kicker">05 / preguntas</p>
+            <h2 id="faq-title">Antes de instalar,<br /><em>sin sorpresa.</em></h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>¿Tiene que estar en la misma red?</summary>
+              <p>
+                Sí, para Wi‑Fi. También podés usar cable USB (<code>adb reverse</code>)
+                o anclaje Bluetooth. El host no se publica a internet.
+              </p>
+            </details>
+            <details>
+              <summary>¿ClicX manda datos a la nube?</summary>
+              <p>
+                No. El teléfono y la PC se hablan por WebSocket en tu red. No
+                hay cuenta ni servidor externo.
+              </p>
+            </details>
+            <details>
+              <summary>¿Anda en iPhone?</summary>
+              <p>
+                La app es Expo. En iOS la conexión es principalmente por Wi‑Fi;
+                el reverse USB es de Android.
+              </p>
+            </details>
+            <details>
+              <summary>¿Qué hago si Windows Firewall pregunta?</summary>
+              <p>
+                Permití acceso en redes privadas. El puerto por defecto es
+                <code>51234</code>.
+              </p>
+            </details>
+            <details>
+              <summary>¿El cursor se siente lento?</summary>
+              <p>
+                Un mouse USB va a 1–8 ms. Por Wi‑Fi + touch suele ser más. ClicX
+                predice el movimiento (<code>CLICX_PRED_MS</code>, 18 por defecto).
+              </p>
+            </details>
+            <details>
+              <summary>¿Qué muestra «Uso de IA»?</summary>
+              <p>
+                Consumo de Claude Code y Codex: tokens de la semana, ventana de
+                5 h y contexto. El host lee los registros que esas CLI ya
+                escriben en tu PC; no consulta ninguna cuenta ni sale de la red.
+              </p>
+            </details>
+            <details>
+              <summary>¿El portapapeles se sincroniza solo?</summary>
+              <p>
+                No. La sincronización viene apagada. El historial se puede borrar
+                y el contenido no se loguea.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#top">ClicX</a>
+      <nav class="footer-links" aria-label="Pie">
+        <a href="#features">Funciones</a>
+        <a href="#bajar">Bajar</a>
+        <a href="https://github.com/santyAlv/clicx-touchpad">GitHub</a>
+      </nav>
+      <p class="footer-note">Local. Sin nube. Windows + teléfono.</p>
+    </footer>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+receiver/dist/
+receiver/build/
+receiver/*.spec
+
+# Node / Expo
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+*.log
+.DS_Store
+
+# Env
+.env
+.env.*
+
+# Reference clone (not part of the project)
+_dokke_ref/
+receiver/_host_controller_snip.py
